@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+            animation-duration:3s;
+            animation-iteration-count:infinite;
+            animation-direction:alternate;
+            animation-fill-mode:both;
+            animation-play-state:running;
+        }
+        .a1{
+            animation-name:ani1;
+        }
+        .a2{
+            animation-name:ani2;
+        }
+        .a3{
+            animation-name:ani3;
+        }
+        .box:hover{
+            animation-play-state:paused;
+        }
+        @keyframes ani1{
+            0%{
+                background-color:blue;
+                position:relative;
+                left:0px;
+            }
+            50%{
+                background-color:orange;
+                position:relative;
+                left:200px;
+            }
+            100%{
+                background-color:pink;
+                position:relative;
+                left:500px;
+            }
+        }
+        @keyframes ani2{
+            0%{
+                background-color:blue;
+                position:relative;
+                top:20px;
+            }
+            50%{
+                background-color:orange;
+                position:relative;
+                top:150px;
+            }
+            100%{
+                background-color:pink;
+                position:relative;
+                top:300px;
+            }
+        }
+        @keyframes ani3{
+            0%{
+                background-color:blue;
+                position:relative;
+                left:0px;
+                top:50px;
+            }
+            50%{
+                background-color:orange;
+                position:relative;
+                left:200px;
+                top:150px;
+            }
+            100%{
+                background-color:pink;
+                position:relative;
+                left:500px;
+                top:300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box a1"></div>
+    <div class="box a2"></div>
+    <div class="box a3"></div>
+</body>
+</html>
