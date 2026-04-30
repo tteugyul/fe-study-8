@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: lightgray;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        .a {
+            background-color: red;
+        }
+
+        .b {
+            background-color: blue;
+        }
+
+        .c {
+            background-color: black;
+        }
+
+
+        .container:hover {
+            .a {
+                background-color: red;
+                animation-name: aa;
+                animation-duration: 1s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
+
+            .b {
+                background-color: blue;
+                animation-name: bb;
+                animation-duration: 1s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
+
+            .c {
+                background-color: black;
+                animation-name: cc;
+                animation-duration: 1s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
+        }
+
+        .d {
+            background-color: green;
+            position: absolute;
+        }
+
+        .e {
+            background-color: yellow;
+            margin-left: 100px;
+        }
+
+        .d:hover {
+            animation-name: ddee;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        .e:hover {
+            animation-name: ddee;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        .container::after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+
+        @keyframes aa {
+            0% {
+                width: 100px;
+            }
+
+            100% {
+                width: 400px;
+            }
+        }
+
+        @keyframes bb {
+            0% {
+                background-color: blue;
+            }
+
+            100% {
+                background-color: purple;
+            }
+        }
+
+        @keyframes cc {
+            0% {
+                margin-left: 0px;
+            }
+
+            100% {
+                margin-left: 200px;
+            }
+        }
+
+        @keyframes ddee {
+            0% {
+                border: 1px solid black;
+                box-sizing: border-box;
+            }
+
+            100% {
+                border: 10px solid red;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box a"></div>
+        <div class="box b"></div>
+        <div class="box c"></div>
+        <div class="box d"></div>
+        <div class="box e"></div>
+    </div>
+</body>
+
+</html>
