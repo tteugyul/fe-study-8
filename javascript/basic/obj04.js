@@ -118,4 +118,4 @@ console.log(Math.floor(Math.random() * 45) + 1);
 
 console.log(Math.sqrt(225)); // 루트
 
-console.log(Math.sqrt(25));
+console.log(Math.sqrt(225));
